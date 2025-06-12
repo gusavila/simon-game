@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,500,700);
+
+
+@mixin xboxButton( $color: #AAA, $style: "light" ) {
+  
+  font-family: Roboto, "Open sans", Helvetica, Arial;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  
+  width: 3.4em;
+  height: 3.4em;
+  padding: 0;
+  
+  transition: all 0.1s ease;
+  
+  @if $style == "light" {
+  
+    color: 
+      lighten($color,10%);
+  
+    text-shadow: 
+      0 0 0.3em darken($color,40%);
+
+  } 
+  
+  @else {
+    
+    color: 
+      darken($color,10%);
+  
+    text-shadow: 
+      0 0 0.3em lighten($color,30%);
+    
+  }
+  
+  background: 
+    linear-gradient( 145deg , darken($color,10%) 0% , lighten($color,5%) 80% );
+  
+  box-shadow: 
+    0 0 0.1em 0.1em transparentize( lighten( $color , 10% ) , 0.8 ) ,
+    0 0 0.4em rgba(0,0,0,0.7) ,
+    inset 0 0 0.1em 0.1em transparentize( lighten( $color , 30% ) , 0.4 );
+  
+  &:before,
+  &:after {
+   
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    
+    border-radius: 100%;
+    z-index: 1;
+    
+  }
+  
+  &:before {
+    
+    width: 30%;
+    height: 45%;
+    top: 10%;
+    left: 25%;
+    
+    transform: rotateZ(60deg);
+    
+    border-left: 0.1em solid rgba(255,255,255,0.4);
+        
+  }
+  
+  &:after {
+   
+    width: 100%;
+    height: 100%;    
+    top: 0;
+    left: 0;
+    
+    transform: rotateZ(45deg);
+    
+    border-left: 
+      0.1em solid transparentize( lighten( $color , 50% ) , 0.2 );
+    
+    background:
+      linear-gradient( 90deg , rgba(255,255,255,0.4) 0% , rgba(255,255,255,0) 100% );
+    
+  }
+  
+  &:hover,
+  &:focus{
+   
+    color: lighten( $color , 20% );
+    
+    background: 
+      linear-gradient( 145deg , darken($color,5%) 0% , lighten($color,10%) 80% );
+  
+    box-shadow: 
+      0 0 0.2em 0.1em transparentize( lighten( $color , 10% ) , 0.5 ) ,
+      0 0 0.5em rgba(0,0,0,0.8) ,
+      inset 0 0 0.1em 0.1em transparentize( lighten( $color , 40% ) , 0.2 );
+    
+    animation: pulse 0.5s ease infinite;
+    
+  }
+  
+  &:active {
+   
+    color: lighten( $color , 10% );
+    
+    border: 0.05em solid transparentize(darken($color,20%),0.5);
+    
+    background: 
+      linear-gradient( 145deg , $color 0% , lighten($color,30%) 80% );
+  
+    box-shadow: 
+      0 0 0.2em 0.1em transparentize( lighten( $color , 20% ) , 0.3 ) ,
+      0 0 0.5em rgba(0,0,0,0.8) ,
+      inset 0 0 0.1em 0.1em transparentize( lighten( $color , 50% ) , 0.2 );
+    
+  }
+  
+}
+
+
+.xbox.a {
+  @include xboxButton( #89cc16 );
+  top: 13.5em;
+}
+
+.xbox.b {
+  @include xboxButton( #e12c00 );
+  top: 10.5em;
+  margin-left: 2.2em;
+  text-indent: 0.1em;
+}
+
+.xbox.x {
+  @include xboxButton( #0081e9 );
+  top: 10.5em;
+  margin-left: -3.6em;
+}
+
+.xbox.y {
+  @include xboxButton( #fcd400 );
+  top: 7.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+ 
+  background: #333;
+  background: radial-gradient(ellipse at center, #090916 0%, #292d35 100%);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 600px;
+  font-family: Roboto;
+  
+  h1 {
+   
+    color: #eee;
+    text-align: center;
+    text-shadow: 0 1px 0 #aaa,0 2px 0 #aaa;
+    
+  }
+  
+  .controller {
+   
+    position: relative;
+    
+  }
+  
+  button { 
+    
+    margin: 0.5em; 
+    position: absolute!important;
+    font-size: 2em!important;
+    
+    left: 50%;
+    top: 0;
+  
+    margin-left: -0.7em;
+    
+  }
+
+}

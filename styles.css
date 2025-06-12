@@ -1,91 +1,266 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,500,700);
+.xbox.a {
+  font-family: Roboto, "Open sans", Helvetica, Arial;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
   text-align: center;
-  background-color: white;
-}
-
-#level-title {
-  font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
-  margin: 5%;
-  color: rgb(56, 56, 56);
-}
-
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
-}
-
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border-radius: 20%;
+  position: relative;
+  box-sizing: border-box;
   border: none;
-  cursor: pointer;
+  outline: none;
+  border-radius: 100%;
+  width: 3.4em;
+  height: 3.4em;
+  padding: 0;
+  transition: all 0.1s ease;
+  color: rgb(163.2433628319, 232.3185840708, 44.6814159292);
+  text-shadow: 0 0 0.3em rgb(13.3362831858, 19.8584070796, 2.1415929204);
+  background: linear-gradient(145deg, rgb(106.0840707965, 157.9646017699, 17.0353982301) 0%, rgb(152.4579646018, 227.017699115, 24.482300885) 80%);
+  box-shadow: 0 0 0.1em 0.1em rgba(163.2433628319, 232.3185840708, 44.6814159292, 0.2), 0 0 0.4em rgba(0, 0, 0, 0.7), inset 0 0 0.1em 0.1em rgba(203.4115044248, 242.2477876106, 136.7522123894, 0.6);
+  top: 13.5em;
+}
+.xbox.a:before, .xbox.a:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 1;
+}
+.xbox.a:before {
+  width: 30%;
+  height: 45%;
+  top: 10%;
+  left: 25%;
+  transform: rotateZ(60deg);
+  border-left: 0.1em solid rgba(255, 255, 255, 0.4);
+}
+.xbox.a:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+  border-left: 0.1em solid rgba(243.5796460177, 252.1769911504, 228.8230088496, 0.8);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.xbox.a:hover, .xbox.a:focus {
+  color: rgb(183.3274336283, 237.2831858407, 90.7168141593);
+  background: linear-gradient(145deg, rgb(121.5420353982, 180.982300885, 19.517699115) 0%, rgb(163.2433628319, 232.3185840708, 44.6814159292) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(163.2433628319, 232.3185840708, 44.6814159292, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(223.4955752212, 247.2123893805, 182.7876106195, 0.8);
+  animation: pulse 0.5s ease infinite;
+}
+.xbox.a:active {
+  color: rgb(163.2433628319, 232.3185840708, 44.6814159292);
+  border: 0.05em solid rgba(75.1681415929, 111.9292035398, 12.0707964602, 0.5);
+  background: linear-gradient(145deg, #89cc16 0%, rgb(203.4115044248, 242.2477876106, 136.7522123894) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(183.3274336283, 237.2831858407, 90.7168141593, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(243.5796460177, 252.1769911504, 228.8230088496, 0.8);
 }
 
-.game-over {
-  
+.xbox.b {
+  font-family: Roboto, "Open sans", Helvetica, Arial;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  width: 3.4em;
+  height: 3.4em;
+  padding: 0;
+  transition: all 0.1s ease;
+  color: rgb(255, 66.76, 21);
+  text-shadow: 0 0 0.3em rgb(21, 4.1066666667, 0);
+  background: linear-gradient(145deg, rgb(174, 34.0266666667, 0) 0%, rgb(250.5, 48.9866666667, 0) 80%);
+  box-shadow: 0 0 0.1em 0.1em rgba(255, 66.76, 21, 0.2), 0 0 0.4em rgba(0, 0, 0, 0.7), inset 0 0 0.1em 0.1em rgba(255, 148.8133333333, 123, 0.6);
+  top: 10.5em;
+  margin-left: 2.2em;
+  text-indent: 0.1em;
+}
+.xbox.b:before, .xbox.b:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 1;
+}
+.xbox.b:before {
+  width: 30%;
+  height: 45%;
+  top: 10%;
+  left: 25%;
+  transform: rotateZ(60deg);
+  border-left: 0.1em solid rgba(255, 255, 255, 0.4);
+}
+.xbox.b:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+  border-left: 0.1em solid rgba(255, 230.8666666667, 225, 0.8);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.xbox.b:hover, .xbox.b:focus {
+  color: rgb(255, 107.7866666667, 72);
+  background: linear-gradient(145deg, rgb(199.5, 39.0133333333, 0) 0%, rgb(255, 66.76, 21) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(255, 66.76, 21, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 189.84, 174, 0.8);
+  animation: pulse 0.5s ease infinite;
+}
+.xbox.b:active {
+  color: rgb(255, 66.76, 21);
+  border: 0.05em solid rgba(123, 24.0533333333, 0, 0.5);
+  background: linear-gradient(145deg, #e12c00 0%, rgb(255, 148.8133333333, 123) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(255, 107.7866666667, 72, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 230.8666666667, 225, 0.8);
 }
 
-.red {
-  background-color: rgb(160, 26, 26);
+.xbox.x {
+  font-family: Roboto, "Open sans", Helvetica, Arial;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  width: 3.4em;
+  height: 3.4em;
+  padding: 0;
+  transition: all 0.1s ease;
+  color: rgb(29, 154.1244635193, 255);
+  text-shadow: 0 0 0.3em rgb(0, 16.0557939914, 29);
+  background: linear-gradient(145deg, rgb(0, 100.7639484979, 182) 0%, rgb(3.5, 142.7424892704, 255) 80%);
+  box-shadow: 0 0 0.1em 0.1em rgba(29, 154.1244635193, 255, 0.2), 0 0 0.4em rgba(0, 0, 0, 0.7), inset 0 0 0.1em 0.1em rgba(131, 199.652360515, 255, 0.6);
+  top: 10.5em;
+  margin-left: -3.6em;
+}
+.xbox.x:before, .xbox.x:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 1;
+}
+.xbox.x:before {
+  width: 30%;
+  height: 45%;
+  top: 10%;
+  left: 25%;
+  transform: rotateZ(60deg);
+  border-left: 0.1em solid rgba(255, 255, 255, 0.4);
+}
+.xbox.x:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+  border-left: 0.1em solid rgba(233, 245.1802575107, 255, 0.8);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.xbox.x:hover, .xbox.x:focus {
+  color: rgb(80, 176.8884120172, 255);
+  background: linear-gradient(145deg, rgb(0, 114.8819742489, 207.5) 0%, rgb(29, 154.1244635193, 255) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(29, 154.1244635193, 255, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(182, 222.4163090129, 255, 0.8);
+  animation: pulse 0.5s ease infinite;
+}
+.xbox.x:active {
+  color: rgb(29, 154.1244635193, 255);
+  border: 0.05em solid rgba(0, 72.5278969957, 131, 0.5);
+  background: linear-gradient(145deg, #0081e9 0%, rgb(131, 199.652360515, 255) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(80, 176.8884120172, 255, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(233, 245.1802575107, 255, 0.8);
 }
 
-.green {
-  background-color: rgb(28, 138, 28);
+.xbox.y {
+  font-family: Roboto, "Open sans", Helvetica, Arial;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  width: 3.4em;
+  height: 3.4em;
+  padding: 0;
+  transition: all 0.1s ease;
+  color: rgb(255, 222.1428571429, 48);
+  text-shadow: 0 0 0.3em rgb(48, 40.380952381, 0);
+  background: linear-gradient(145deg, rgb(201, 169.0952380952, 0) 0%, rgb(255, 218.0952380952, 22.5) 80%);
+  box-shadow: 0 0 0.1em 0.1em rgba(255, 222.1428571429, 48, 0.2), 0 0 0.4em rgba(0, 0, 0, 0.7), inset 0 0 0.1em 0.1em rgba(255, 238.3333333333, 150, 0.6);
+  top: 7.5em;
+}
+.xbox.y:before, .xbox.y:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 1;
+}
+.xbox.y:before {
+  width: 30%;
+  height: 45%;
+  top: 10%;
+  left: 25%;
+  transform: rotateZ(60deg);
+  border-left: 0.1em solid rgba(255, 255, 255, 0.4);
+}
+.xbox.y:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+  border-left: 0.1em solid rgba(255, 254.5238095238, 252, 0.8);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.xbox.y:hover, .xbox.y:focus {
+  color: rgb(255, 230.2380952381, 99);
+  background: linear-gradient(145deg, rgb(226.5, 190.5476190476, 0) 0%, rgb(255, 222.1428571429, 48) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(255, 222.1428571429, 48, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 246.4285714286, 201, 0.8);
+  animation: pulse 0.5s ease infinite;
+}
+.xbox.y:active {
+  color: rgb(255, 222.1428571429, 48);
+  border: 0.05em solid rgba(150, 126.1904761905, 0, 0.5);
+  background: linear-gradient(145deg, #fcd400 0%, rgb(255, 238.3333333333, 150) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(255, 230.2380952381, 99, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 254.5238095238, 252, 0.8);
 }
 
-.blue {
-  background-color: rgb(27, 27, 192);
+body {
+  background: #333;
+  background: radial-gradient(ellipse at center, #090916 0%, #292d35 100%);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 600px;
+  font-family: Roboto;
+}
+body h1 {
+  color: #eee;
+  text-align: center;
+}
+body .controller {
+  position: relative;
+}
+body button {
+  margin: 0.5em;
+  position: absolute !important;
+  font-size: 2em !important;
+  left: 50%;
+  top: 0;
+  margin-left: -0.7em;
 }
 
-.yellow {
-  background-color: rgb(201, 201, 34);
-}
-
-.pressed {
-  box-shadow: 0 0 20px 10px white;
-}
-
-.yellow .front {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  background: rgb(238, 238, 12);
-  transform: translateY(-10px);
-}
-
-.blue .front {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  background: rgb(55, 55, 241);
-  transform: translateY(-10px);
-}
-
-.red .front {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  background: rgb(236, 6, 6);
-  transform: translateY(-10px);
-}
-
-.green .front {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  background: rgb(9, 211, 9);
-  transform: translateY(-10px);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-}
+/*# sourceMappingURL=styles2.css.map */
