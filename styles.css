@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  background-color: white;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: rgb(56, 56, 56);
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: none;
+  cursor: pointer;
+}
+
+.game-over {
+  
+}
+
+.red {
+  background-color: rgb(160, 26, 26);
+}
+
+.green {
+  background-color: rgb(28, 138, 28);
+}
+
+.blue {
+  background-color: rgb(27, 27, 192);
+}
+
+.yellow {
+  background-color: rgb(201, 201, 34);
+}
+
+.pressed {
+  box-shadow: 0 0 20px 10px white;
+}
+
+.yellow .front {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  background: rgb(238, 238, 12);
+  transform: translateY(-10px);
+}
+
+.blue .front {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  background: rgb(55, 55, 241);
+  transform: translateY(-10px);
+}
+
+.red .front {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  background: rgb(236, 6, 6);
+  transform: translateY(-10px);
+}
+
+.green .front {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+  background: rgb(9, 211, 9);
+  transform: translateY(-10px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
