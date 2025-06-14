@@ -75,7 +75,7 @@ function checkAnswer(position) {
     return true;
   } else {
     var wrongSound = new Audio("sounds/wrong.mp3");
-    /* wrongSound.play(); */
+    wrongSound.play();
 
     $("body").addClass("game-over");
     setTimeout(() => {
