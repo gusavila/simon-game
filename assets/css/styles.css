@@ -52,12 +52,6 @@
   box-shadow: 0 0 0.2em 0.1em rgba(163.2433628319, 232.3185840708, 44.6814159292, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(223.4955752212, 247.2123893805, 182.7876106195, 0.8);
   animation: pulse 0.5s ease infinite;
 }
-.xbox.a:active {
-  color: rgb(163.2433628319, 232.3185840708, 44.6814159292);
-  border: 0.05em solid rgba(75.1681415929, 111.9292035398, 12.0707964602, 0.5);
-  background: linear-gradient(145deg, #89cc16 0%, rgb(203.4115044248, 242.2477876106, 136.7522123894) 80%);
-  box-shadow: 0 0 0.2em 0.1em rgba(183.3274336283, 237.2831858407, 90.7168141593, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(243.5796460177, 252.1769911504, 228.8230088496, 0.8);
-}
 
 .xbox.b {
   font-family: Roboto, "Open sans", Helvetica, Arial;
@@ -111,12 +105,6 @@
   background: linear-gradient(145deg, rgb(199.5, 39.0133333333, 0) 0%, rgb(255, 66.76, 21) 80%);
   box-shadow: 0 0 0.2em 0.1em rgba(255, 66.76, 21, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 189.84, 174, 0.8);
   animation: pulse 0.5s ease infinite;
-}
-.xbox.b:active {
-  color: rgb(255, 66.76, 21);
-  border: 0.05em solid rgba(123, 24.0533333333, 0, 0.5);
-  background: linear-gradient(145deg, #e12c00 0%, rgb(255, 148.8133333333, 123) 80%);
-  box-shadow: 0 0 0.2em 0.1em rgba(255, 107.7866666667, 72, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 230.8666666667, 225, 0.8);
 }
 
 .xbox.x {
@@ -172,12 +160,6 @@
   box-shadow: 0 0 0.2em 0.1em rgba(29, 154.1244635193, 255, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(182, 222.4163090129, 255, 0.8);
   animation: pulse 0.5s ease infinite;
 }
-.xbox.x:active {
-  color: rgb(29, 154.1244635193, 255);
-  border: 0.05em solid rgba(0, 72.5278969957, 131, 0.5);
-  background: linear-gradient(145deg, #0081e9 0%, rgb(131, 199.652360515, 255) 80%);
-  box-shadow: 0 0 0.2em 0.1em rgba(80, 176.8884120172, 255, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(233, 245.1802575107, 255, 0.8);
-}
 
 .xbox.y {
   font-family: Roboto, "Open sans", Helvetica, Arial;
@@ -232,12 +214,6 @@
   box-shadow: 0 0 0.2em 0.1em rgba(255, 222.1428571429, 48, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 246.4285714286, 201, 0.8);
   animation: pulse 0.5s ease infinite;
 }
-.xbox.y:active {
-  color: rgb(255, 222.1428571429, 48);
-  border: 0.05em solid rgba(150, 126.1904761905, 0, 0.5);
-  background: linear-gradient(145deg, #fcd400 0%, rgb(255, 238.3333333333, 150) 80%);
-  box-shadow: 0 0 0.2em 0.1em rgba(255, 230.2380952381, 99, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 254.5238095238, 252, 0.8);
-}
 
 body {
   background: #333;
@@ -247,9 +223,9 @@ body {
   position: relative;
   font-family: Roboto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0;
   flex-direction: column;
 }
@@ -262,11 +238,39 @@ body .controller {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1em;
+  gap: 0em;
   place-items: center;
   max-width: 30em;
   min-height: 20em;
-  margin: 5em auto;
+}
+body .pressed {
+  transform: scale(0.9);
+  filter: brightness(1.2);
+  transition: all 0.1s ease;
+}
+body .xbox.a.pressed {
+  color: rgb(163.2433628319, 232.3185840708, 44.6814159292);
+  border: 0.05em solid rgba(75.1681415929, 111.9292035398, 12.0707964602, 0.5);
+  background: linear-gradient(145deg, #89cc16 0%, rgb(203.4115044248, 242.2477876106, 136.7522123894) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(183.3274336283, 237.2831858407, 90.7168141593, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(243.5796460177, 252.1769911504, 228.8230088496, 0.8);
+}
+body .xbox.b.pressed {
+  color: rgb(255, 66.76, 21);
+  border: 0.05em solid rgba(123, 24.0533333333, 0, 0.5);
+  background: linear-gradient(145deg, #e12c00 0%, rgb(255, 148.8133333333, 123) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(255, 107.7866666667, 72, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 230.8666666667, 225, 0.8);
+}
+body .xbox.x.pressed {
+  color: rgb(29, 154.1244635193, 255);
+  border: 0.05em solid rgba(0, 72.5278969957, 131, 0.5);
+  background: linear-gradient(145deg, #0081e9 0%, rgb(131, 199.652360515, 255) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(80, 176.8884120172, 255, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(233, 245.1802575107, 255, 0.8);
+}
+body .xbox.y.pressed {
+  color: rgb(255, 222.1428571429, 48);
+  border: 0.05em solid rgba(150, 126.1904761905, 0, 0.5);
+  background: linear-gradient(145deg, #fcd400 0%, rgb(255, 238.3333333333, 150) 80%);
+  box-shadow: 0 0 0.2em 0.1em rgba(255, 230.2380952381, 99, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 254.5238095238, 252, 0.8);
 }
 
 /*# sourceMappingURL=styles.css.map */
