@@ -7,7 +7,7 @@ let level = 0;
 let gameStarted = false;
 
 function playSound(name) {
-  var audio = new Audio(`/assets/sounds/${name}.mp3`);
+  var audio = new Audio(`assets/sounds/${name}.mp3`);
   audio.play();
 }
 
