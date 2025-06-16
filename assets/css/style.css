@@ -22,6 +22,7 @@
   grid-column: 2;
   grid-row: 3;
 }
+
 .xbox.a:before, .xbox.a:after {
   content: "";
   position: absolute;
@@ -29,6 +30,7 @@
   border-radius: 100%;
   z-index: 1;
 }
+
 .xbox.a:before {
   width: 30%;
   height: 45%;
@@ -37,6 +39,7 @@
   transform: rotateZ(55deg);
   border-left: 0.1em solid rgba(255, 255, 255, 0.4);
 }
+
 .xbox.a:after {
   width: 100%;
   height: 100%;
@@ -46,6 +49,7 @@
   border-left: 0.1em solid rgba(243.5796460177, 252.1769911504, 228.8230088496, 0.8);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .xbox.a:hover {
   color: rgb(183.3274336283, 237.2831858407, 90.7168141593);
   background: linear-gradient(145deg, rgb(121.5420353982, 180.982300885, 19.517699115) 0%, rgb(163.2433628319, 232.3185840708, 44.6814159292) 80%);
@@ -76,6 +80,7 @@
   grid-column: 3;
   grid-row: 2;
 }
+
 .xbox.b:before, .xbox.b:after {
   content: "";
   position: absolute;
@@ -83,6 +88,7 @@
   border-radius: 100%;
   z-index: 1;
 }
+
 .xbox.b:before {
   width: 30%;
   height: 45%;
@@ -91,6 +97,7 @@
   transform: rotateZ(55deg);
   border-left: 0.1em solid rgba(255, 255, 255, 0.4);
 }
+
 .xbox.b:after {
   width: 100%;
   height: 100%;
@@ -100,6 +107,7 @@
   border-left: 0.1em solid rgba(255, 230.8666666667, 225, 0.8);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .xbox.b:hover {
   color: rgb(255, 107.7866666667, 72);
   background: linear-gradient(145deg, rgb(199.5, 39.0133333333, 0) 0%, rgb(255, 66.76, 21) 80%);
@@ -130,6 +138,7 @@
   grid-column: 1;
   grid-row: 2;
 }
+
 .xbox.x:before, .xbox.x:after {
   content: "";
   position: absolute;
@@ -137,6 +146,7 @@
   border-radius: 100%;
   z-index: 1;
 }
+
 .xbox.x:before {
   width: 30%;
   height: 45%;
@@ -145,6 +155,7 @@
   transform: rotateZ(55deg);
   border-left: 0.1em solid rgba(255, 255, 255, 0.4);
 }
+
 .xbox.x:after {
   width: 100%;
   height: 100%;
@@ -154,6 +165,7 @@
   border-left: 0.1em solid rgba(233, 245.1802575107, 255, 0.8);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .xbox.x:hover {
   color: rgb(80, 176.8884120172, 255);
   background: linear-gradient(145deg, rgb(0, 114.8819742489, 207.5) 0%, rgb(29, 154.1244635193, 255) 80%);
@@ -184,6 +196,7 @@
   grid-column: 2;
   grid-row: 1;
 }
+
 .xbox.y:before, .xbox.y:after {
   content: "";
   position: absolute;
@@ -191,6 +204,7 @@
   border-radius: 100%;
   z-index: 1;
 }
+
 .xbox.y:before {
   width: 30%;
   height: 45%;
@@ -199,6 +213,7 @@
   transform: rotateZ(55deg);
   border-left: 0.1em solid rgba(255, 255, 255, 0.4);
 }
+
 .xbox.y:after {
   width: 100%;
   height: 100%;
@@ -208,6 +223,7 @@
   border-left: 0.1em solid rgba(255, 254.5238095238, 252, 0.8);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .xbox.y:hover {
   color: rgb(255, 230.2380952381, 99);
   background: linear-gradient(145deg, rgb(226.5, 190.5476190476, 0) 0%, rgb(255, 222.1428571429, 48) 80%);
@@ -229,11 +245,13 @@ body {
   margin: 0;
   flex-direction: column;
 }
+
 body h1 {
   color: #eee;
   text-align: center;
   text-shadow: 1px 1px 2px #aaa;
 }
+
 body .controller {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -243,43 +261,34 @@ body .controller {
   max-width: 30em;
   min-height: 20em;
 }
-@keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-body .flash {
-  animation: flash 0.3s ease;
-}
+
 body .pressed {
   transform: scale(0.9);
   filter: brightness(1.2);
   transition: all 0.1s ease;
 }
+
 body .xbox.a.pressed {
   color: rgb(163.2433628319, 232.3185840708, 44.6814159292);
   border: 0.05em solid rgba(75.1681415929, 111.9292035398, 12.0707964602, 0.5);
   background: linear-gradient(145deg, #89cc16 0%, rgb(203.4115044248, 242.2477876106, 136.7522123894) 80%);
   box-shadow: 0 0 0.2em 0.1em rgba(183.3274336283, 237.2831858407, 90.7168141593, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(243.5796460177, 252.1769911504, 228.8230088496, 0.8);
 }
+
 body .xbox.b.pressed {
   color: rgb(255, 66.76, 21);
   border: 0.05em solid rgba(123, 24.0533333333, 0, 0.5);
   background: linear-gradient(145deg, #e12c00 0%, rgb(255, 148.8133333333, 123) 80%);
   box-shadow: 0 0 0.2em 0.1em rgba(255, 107.7866666667, 72, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 230.8666666667, 225, 0.8);
 }
+
 body .xbox.x.pressed {
   color: rgb(29, 154.1244635193, 255);
   border: 0.05em solid rgba(0, 72.5278969957, 131, 0.5);
   background: linear-gradient(145deg, #0081e9 0%, rgb(131, 199.652360515, 255) 80%);
   box-shadow: 0 0 0.2em 0.1em rgba(80, 176.8884120172, 255, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(233, 245.1802575107, 255, 0.8);
 }
+
 body .xbox.y.pressed {
   color: rgb(255, 222.1428571429, 48);
   border: 0.05em solid rgba(150, 126.1904761905, 0, 0.5);
@@ -287,4 +296,6 @@ body .xbox.y.pressed {
   box-shadow: 0 0 0.2em 0.1em rgba(255, 230.2380952381, 99, 0.7), 0 0 0.5em rgba(0, 0, 0, 0.8), inset 0 0 0.1em 0.1em rgba(255, 254.5238095238, 252, 0.8);
 }
 
-/*# sourceMappingURL=styles.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
