@@ -11,8 +11,8 @@
   border: none;
   outline: none;
   border-radius: 100%;
-  width: 3.4em;
-  height: 3.4em;
+  width: 4em;
+  height: 4em;
   padding: 0;
   transition: all 0.3s ease-out;
   color: rgb(163.2433628319, 232.3185840708, 44.6814159292);
@@ -65,8 +65,8 @@
   border: none;
   outline: none;
   border-radius: 100%;
-  width: 3.4em;
-  height: 3.4em;
+  width: 4em;
+  height: 4em;
   padding: 0;
   transition: all 0.3s ease-out;
   color: rgb(255, 66.76, 21);
@@ -119,8 +119,8 @@
   border: none;
   outline: none;
   border-radius: 100%;
-  width: 3.4em;
-  height: 3.4em;
+  width: 4em;
+  height: 4em;
   padding: 0;
   transition: all 0.3s ease-out;
   color: rgb(29, 154.1244635193, 255);
@@ -173,8 +173,8 @@
   border: none;
   outline: none;
   border-radius: 100%;
-  width: 3.4em;
-  height: 3.4em;
+  width: 4em;
+  height: 4em;
   padding: 0;
   transition: all 0.3s ease-out;
   color: rgb(255, 222.1428571429, 48);
@@ -241,7 +241,7 @@ body .controller {
   gap: 0em;
   place-items: center;
   max-width: 30em;
-  min-height: 20em;
+  min-width: 20em;
 }
 @keyframes flash {
   0% {

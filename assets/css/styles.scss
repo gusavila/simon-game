@@ -14,8 +14,8 @@
   outline: none;
   border-radius: 100%;
 
-  width: 3.4em;
-  height: 3.4em;
+  width: 4em;
+  height: 4em;
   padding: 0;
 
   transition: all 0.3s ease-out;
@@ -146,7 +146,7 @@ body {
     gap: 0em;
     place-items: center;
     max-width: 30em;
-    min-height: 20em;
+    min-width: 20em;
   }
 
   @keyframes flash {
