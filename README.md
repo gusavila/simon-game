@@ -2,6 +2,10 @@
 
 This is a web-based implementation of the classic **Simon Game**, built with **HTML**, **CSS**, and **JavaScript**. The game challenges your memory by playing and displaying an increasing sequence of colors that the player must repeat in the correct order.
 
+## 📸 Preview
+
+![Simon Game Preview](/assets/images/game_image.png)
+
 ## 🕹️ Features
 
 - 🎨 Four-color Simon buttons: green, red, yellow, blue.
@@ -60,10 +64,6 @@ simon-game/
 - **JavaScript (ES6)** with jQuery
 - **Gamepad API**
 - **Google Fonts**: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)
-
-## 📸 Preview
-
-![Simon Game Preview](/assets/images/game_image.png)
 
 ## 📦 Setup & Usage
 
